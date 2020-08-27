@@ -7,7 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/1bHAzzRu9Jhbr-XbHuGDstl5Kp6Pgr8bf
 """
 
-pip install sentiment-analysis-spanish
+#pip install sentiment-analysis-spanish
 
 import pandas as pd
 import re
