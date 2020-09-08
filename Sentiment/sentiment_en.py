@@ -21,15 +21,12 @@ from nltk.corpus import stopwords
 from wordcloud import WordCloud
 import matplotlib.pyplot as plt
 
-df = pd.read_csv("en.csv")
+df = pd.read_csv("EN.csv")
 
 df.shape
 
-df1 = df[["user_id", "text"]]
 
-df1['user_id'] = df1['user_id'].str[1:]
-
-df1.text = df1.text.str.lower()
+df1.text = df.text.str.lower()
 
 df1.head()
 
