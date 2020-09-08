@@ -12,7 +12,7 @@ pip install googletrans
 from googletrans import Translator
 import pandas as pd
 
-df = pd.read_csv("it.csv")
+df = pd.read_csv("IT.csv")
 
 df.shape
 
@@ -24,12 +24,12 @@ df['English_tweet'] = df['text'].apply(translator.translate, src='it', dest='en'
 
 df.loc[50:60]
 
-df.to_csv('it_2.csv', index=False)
+#df.to_csv('it_2.csv', index=False)
 
 import pandas as pd
 import re
 
-df = pd.read_csv("it_2.csv")
+#df = pd.read_csv("it_2.csv")
 
 df.shape
 
