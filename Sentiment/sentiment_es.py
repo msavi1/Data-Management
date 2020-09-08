@@ -13,11 +13,11 @@ import pandas as pd
 import re
 import matplotlib.pyplot as plt
 
-df = pd.read_csv("es.csv")
+df = pd.read_csv("ES.csv")
 
 df.shape
 
-df = df.drop(columns=['Unnamed: 0'])
+#df = df.drop(columns=['Unnamed: 0'])
 
 df.head()
 
@@ -35,9 +35,9 @@ df['English_tweet'] = df['text'].apply(translator.translate, src='es', dest='en'
 
 df.head()
 
-df.to_csv('es_2.csv', index=False)
+#df.to_csv('es_2.csv', index=False)
 
-df = pd.read_csv('es_2.csv')
+#df = pd.read_csv('es_2.csv')
 
 df.shape
 
