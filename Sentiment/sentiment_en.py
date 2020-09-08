@@ -25,8 +25,9 @@ df = pd.read_csv("EN.csv")
 
 df.shape
 
+df1 = df
 
-df1.text = df.text.str.lower()
+df1.text = df1.text.str.lower()
 
 df1.head()
 
