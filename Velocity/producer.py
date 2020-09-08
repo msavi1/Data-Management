@@ -50,4 +50,4 @@ if __name__ == '__main__':
     api = tweepy.API(auth) 
     stream = listener 
     stream = Stream(auth = api.auth, listener=stream()) 
-    stream.filter(track=['#lacasadepapel'], languages=["it", "en", "es"])
+    stream.filter(track=['lacasadepapel'], languages=["it", "en", "es"])
